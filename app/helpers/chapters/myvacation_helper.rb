@@ -1,0 +1,2 @@
+module Chapters::MyvacationHelper
+end
