@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './home.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './home.component', './test.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './home.component'], functi
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, home_component_1;
+    var core_1, router_1, home_component_1, test_component_1;
     var AppRouterComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './home.component'], functi
             },
             function (home_component_1_1) {
                 home_component_1 = home_component_1_1;
+            },
+            function (test_component_1_1) {
+                test_component_1 = test_component_1_1;
             }],
         execute: function() {
             AppRouterComponent = (function () {
@@ -35,7 +38,12 @@ System.register(['angular2/core', 'angular2/router', './home.component'], functi
                         styles: []
                     }),
                     router_1.RouteConfig([
-                        { path: '/', name: 'Home', component: home_component_1.HomeComponent }
+                        {
+                            path: '/', name: 'Home', component: home_component_1.HomeComponent
+                        },
+                        {
+                            path: 'test', name: 'Test', component: test_component_1.TestComponent
+                        }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppRouterComponent);

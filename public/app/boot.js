@@ -1,9 +1,9 @@
-System.register(["angular2/platform/browser", "./app_router.component", "angular2/http", "angular2/router"], function (exports_1, context_1) {
+System.register(['angular2/platform/browser', './app_router.component', 'angular2/http', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var browser_1, app_router_component_1, http_1, router_1;
     return {
-        setters: [
+        setters:[
             function (browser_1_1) {
                 browser_1 = browser_1_1;
             },
@@ -15,14 +15,13 @@ System.register(["angular2/platform/browser", "./app_router.component", "angular
             },
             function (router_1_1) {
                 router_1 = router_1_1;
-            }
-        ],
-        execute: function () {
+            }],
+        execute: function() {
             browser_1.bootstrap(app_router_component_1.AppRouterComponent, [
                 http_1.HTTP_PROVIDERS,
                 router_1.ROUTER_PROVIDERS
             ]);
         }
-    };
+    }
 });
 //# sourceMappingURL=boot.js.map
