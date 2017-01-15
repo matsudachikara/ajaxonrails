@@ -1,6 +1,6 @@
-<p><a href="#" onclick="updateElement();">コンテンツの更新</a></p>
+<p><%= link_to "サーバー呼び出し(ヘルパ使用)", "/chapters/myresponse", :remote => true %></p>
 <p id="response"></p>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   function updateElement() {
     $.ajax({
       type: "GET",
@@ -10,4 +10,4 @@
       $('#response').text($(response).find('p').text());
     });
   }
-</script>
+</script> -->

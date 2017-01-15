@@ -1,0 +1,16 @@
+<script>
+  System.config({
+      map: {
+          'app': '/app',
+      },
+      packages: {
+          'app': {
+              format: 'register',
+              defaultExtension: 'js'
+          }
+      }
+  });
+  System.import('app/boot');
+</script>
+<base href="/">
+<app-router></app-router>
