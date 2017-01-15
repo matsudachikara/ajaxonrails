@@ -1,3 +1,4 @@
 <h1>Chapter3#index</h1>
-<p><%= link_to "時刻を更新する(remote)", {:action => 'get_time', :remote => true}, {id: 'update_time'} %></p>
+<p><%= link_to "時刻を更新する(remote)", {:action => 'get_time', :remote => true}, {id: 'update_time'} %>
+<span id="indicator" style="display: none;">読み込み中・・・</span></p>
 <div id="current_time"><%= @time %></div>
